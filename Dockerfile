@@ -4,7 +4,7 @@
 # Docker Hub - http://hub.docker.com/u/dalekurt/activator
 # Twitter - http://www.twitter.com/dalekurt
 
-FROM dalekurt/java
+FROM dalekurt/java7
 
 MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
 
