@@ -6,6 +6,9 @@
 
 FROM dalekurt/java7
 
+# Basic environment setup
+RUN apt-get update; apt-get install -y unzip wget
+
 MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
 
 ENV ACTIVATOR_VERSION 1.3.2
