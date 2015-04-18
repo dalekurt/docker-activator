@@ -20,3 +20,8 @@ RUN cd /tmp && \
   mv /tmp/activator-$ACTIVATOR_VERSION /opt/typesafe/activator-$ACTIVATOR_VERSION && \
   ln -s /opt/typesafe/activator-$ACTIVATOR_VERSION/activator /usr/local/bin/activator && \
   rm /tmp/typesafe-activator-$ACTIVATOR_VERSION.zip
+
+EXPOSE 9000
+RUN mkdir /opt/app
+WORKDIR /opt/app
+CMD ["activator", "run"]
